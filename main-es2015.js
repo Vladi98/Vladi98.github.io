@@ -41,7 +41,7 @@ module.exports = "<html lang=\"en\">\n    <body>\n        <header>\n          <d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<!-- <footer id=\"sticky-footer\" class=\"py-4 bg-dark text-white-50\">\n        <div class=\"container text-center\">\n          <small>Copyright &copy; Your Website</small>\n        </div>\n      </footer> -->\n\n      <div class=\"footer\">\n            <p class =\"info\">Made by: Vladimir Dachkinov <br> Contact: vdachinov16@abv.bg</p>\n          </div>\n<!-- <footer class=\"page-footer font-small blue\">\n\n       \n        <div class=\"footer-copyright text-center py-3\">© 2019 Copyright:\n          <p>Vladimir Dachkinov</p>\n        </div>\n    \n      d\n      </footer> -->"
+module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<div class=\"footer\">\n  <p class =\"info\">Made by: Vladimir Dachkinov <br> Contact: vdachkinov16@abv.bg</p>\n</div>"
 
 /***/ }),
 
@@ -52,7 +52,7 @@ module.exports = "<app-navbar></app-navbar>\n<router-outlet></router-outlet>\n<!
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n    <div class=\"login-form\">\n            <form (ngSubmit) = \"registerUser()\">\n                <h2 class=\"text-center\">Register</h2>       \n                <div class=\"form-group\">\n                    <input [(ngModel)] = \"register.username\" name = \"name\" placeholder = \"Username\" type=\"text\" class=\"form-control\" placeholder=\"Username\" required=\"required\">\n                </div>\n                <div class=\"form-group\">\n                    <input [(ngModel)] = \"register.email\" name = \"username\" placeholder = \"Email\" type =\"text\" class=\"form-control\" required=\"required\">\n                </div>\n                <div class=\"form-group\">\n                    <input [(ngModel)] = \"register.password\" name = \"password\" placeholder = \"Password\" type =\"password\" class=\"form-control\" required=\"required\">\n                </div>\n                <div class=\"form-group\">\n                    <button type=\"submit\" class=\"btn btn-primary btn-block\">Register</button>\n                </div>\n                <a routerLink=\"\">Login!</a>\n            </form>\n    </div>"
+module.exports = "<div class=\"login-form\">\n        <form (ngSubmit) = \"registerUser()\">\n           <h2 class=\"text-center\">Register</h2>\n           <div class=\"form-group\">\n              <input [(ngModel)] = \"register.username\" name = \"name\" placeholder = \"Username\" type=\"text\" class=\"form-control\" placeholder=\"Username\" required=\"required\">\n           </div>\n           <div class=\"form-group\">\n              <input [(ngModel)] = \"register.email\" name = \"username\" placeholder = \"Email\" type =\"text\" class=\"form-control\" required=\"required\">\n           </div>\n           <div class=\"form-group\">\n              <input [(ngModel)] = \"register.password\" name = \"password\" placeholder = \"Password\" type =\"password\" class=\"form-control\" required=\"required\">\n           </div>\n           <div class=\"form-group\">\n              <button type=\"submit\" class=\"btn btn-primary btn-block\">Register</button>\n           </div>\n           <a routerLink=\"\">Login!</a>\n        </form>\n</div>"
 
 /***/ }),
 
@@ -458,7 +458,6 @@ let AuthGuard = class AuthGuard {
             return false;
         }
         ;
-        return true;
     }
 };
 AuthGuard.ctorParameters = () => [
